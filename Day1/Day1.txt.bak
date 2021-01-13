@@ -1,0 +1,43 @@
+Node.js
+
+- 백엔드 개발자가 사용하는 언어입니다.
+- 서버에서 실행되는 자바스크립트입니다.
+- Google V8 JavaScript 엔진을 사용하여 코드를 실행하고 기본 모듈이 자바스크립트로 사용됩니다.
+- node.js에는 웹 서버프로그램(apache, iis, zeus ..)과 같은 소프트웨어가 필요없이 웹 서버 역할을 할 수 있도록 하는 내장 라이브러리가 있습니다.
+- NPM이라는 패키지 관리자가 포함되어 있습니다. NPM은 node.js의 프로그램을 설치하고 관리하는데 사용됩니다.
+
+Node.js 다운로드
+https://nodejs.org
+
+Node.js 버전 확인
+cmd 창에서 node -v 명령어로 확인합니다.
+
+npm 버전 확인
+cmd 창에서 npm -v 명령어로 확인합니다.
+
+https://www.npmjs.com/
+
+
+package.json 파일 만들기
+npm init : 옵션을 직접 제공
+npm init -y : 기본값을 기준으로 바로 생성
+
+package 설치하기
+npm install 모듈명
+
+package.json 으로 모듈 복원하기
+npm install
+
+
+FileSystem 모듈
+파일처리와 관련된 모듈입니다. 메소드가 많고 node.js에서 가장 중요하고 기초가 되는 모듈입니다.
+
+메소드
+readFile() : 파일을 비동기적으로 읽습니다.
+readFileSync() : 파일을 동기적으로 읽습니다.
+writeFile() : 파일을 비동기적으로 씁니다.
+writeFileSync() : 파일을 동기적으로 씁니다.
+
+* 동기와 비동기
+프로그램이 동작하는 상태에서 완전히 해당 내용을 끝내고 다음으로 제어를 넘기는 방식을 동기식, 동작이 끝나지 않은 상태에서도 제어권을 넘긴 후 프로그램을 계속 진행하면 비동기식이라고 합니다.
+

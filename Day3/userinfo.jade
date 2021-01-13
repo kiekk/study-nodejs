@@ -1,0 +1,19 @@
+html
+    head
+        title 사용자 정보보기
+        body
+            #header
+                h1 사용자 이름 : #{userid}
+            hr
+            #header2
+                h2 #{name}
+                h4= desc
+            hr
+            .article
+                a(href='https://www.daum.net') go to daum
+            hr
+            .for
+                - for(let i=0; i<10; i++){
+                    p
+                        a(href='http://localhost:3000/#{i}') 내 사이트로 이동 #{i}
+                - }

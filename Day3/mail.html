@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메일 보내기</title>
+</head>
+<body>
+    <h2>메일 보내기</h2>
+    <form method="post" action="/mailok">
+        <!-- 메일 보내는 양식 -->
+        <p><label>보내는 사람 : <input type="text" name="from"></label></p>
+        <p><label>보내는 이메일 : <input type="text" name="fromemail"></label></p>
+        <p><label>받는 사람 : <input type="text" name="to"></label></p>
+        <p><label>받는 이메일 : <input type="text" name="toemail"></label></p>
+        <p><label>제목 : <input type="text" name="title"></label></p>
+        <p>내용</p>
+        <p><textarea name="content" cols="60" rows="5"></textarea></p>
+        <p><input type="submit" value="확인"></p>
+    </form>
+</body>
+</html>

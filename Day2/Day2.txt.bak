@@ -1,0 +1,51 @@
+http 모듈
+
+Node.js에서 가장 기본적이고 중요한 서버 모듈입니다. HTTP 웹 서버를 생성하는 것과 관련된 모든 기능을 담당합니다.
+
+1. server 객체
+http 모듈의 createServer() 메소드를 사용하여 server 객체를 생성합니다.
+
+메소드
+listen() : 서버를 실행하고 클라이언트를 기다립니다.
+close() : 서버를 종료합니다.
+
+이벤트
+request : 클라이언트가 서버에 요청할 때 발생하는 이벤트입니다.
+connection : 클라이언트가 접속할 때 발생하는 이벤트입니다.
+close : 서버가 종료될 때 발생하는 이벤트입니다.
+
+2. request 객체
+클라이언트가 서버에게 전달하는 메세지(정보)를 담는 객체입니다.
+
+속성
+method : 클라이언트 요청 방식을 나타냅니다. (GET, POST)
+url : 클라이언트가 요청한 URL을 나타냅니다.
+headers : 요청 메세지 헤더를 나타냅니다.
+
+http://www.naver.com/blog/index.nhn
+<---------------------------------> URL
+		    <-------------> pathname
+
+req.url : "http://www.naver.com/blog/index.nhn"
+url.parse() : URL 형태를 분석합니다.
+url.parse().pathname : "/blog/index.nhn"
+
+
+3. response 객체
+서버에서 클라이언트로 응답 메세지를 전송시켜주는 객체입니다.
+
+메소드
+writeHead() : 응답 헤더를 작성합니다.
+end() : 응답 본문을 작성합니다.
+
+
+MIME 형식
+text/plain : 일반적인 text 파일
+text/html : html 형식 파일
+text/css : css 형식 파일
+text/xml : xml 형식 파일
+image/jpeg : jpeg 이미지 파일
+image/png : png 이미지 파일
+video/mpeg : mpeg 동영상 파일
+audio/mp3 : mp3 음악 파일
+...

@@ -1,0 +1,40 @@
+npx
+npm 레지스트리의 패키지 사용을 파악하기 위한 도구입니다. 모듈을 설치하는 대신 프로젝트 전역에 시스템으로 사용할 수 있도록 
+만들어줍니다.
+
+nodemon
+소스 수정시 자동으로 서버를 재시작 해주는 모듈
+
+npm install nodemon -g
+
+nodemon으로 프로젝트 실행
+nodemon 1_passport.js (실행 안될 수 있음)
+npx nodemon 1_passport.js
+
+
+socket.io 모듈
+웹소켓을 이용하여 클라이언트에 실시간으로 데이터를 전송합니다. socket을 구현한 것으로 WebSocket 개발을 쉽게 하기 위한 것입니다. 클라이언트에서 EventListener로 새로운 정보를 받아 데이터를 업데이트 할 수 있습니다.
+
+브라우저
+클라이언트 소켓	------------> 		서버 소켓(대기, 포트)
+ip : xxx.xxx.xxx.xxx			클라이언트 소켓
+port : xxxx	<-----------
+
+
+브라우저
+클라이언트 소켓	------------>		클라이언트 소켓
+ip : xxx.xxx.xxx.xxx			
+port : xxxx	<----------- 
+
+socket.io를 통해 할 수 있는 것
+- 실시간 데이터 처리
+- 메시징 서비스(채팅)
+- 바이너리 스트리밍, 문서 공동작업 등
+
+
+* 여러개의 클라이언트를 서버로 접속하기 위한 방법
+- cors 모듈 (socket.io 적용 X, ajax로 변환)
+- package.json에 proxy 설정
+
+
+
